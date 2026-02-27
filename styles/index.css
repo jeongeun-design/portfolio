@@ -1,0 +1,125 @@
+/* 모바일 기준 w440 */
+html {/* 스크롤 애니메이션 효과 */
+    scroll-behavior: smooth;
+/* Firefox */
+    html {scrollbar-width: 10px;;scrollbar-color: #728385 #aaa;}
+    /* Opera */
+    html::-o-scrollbar {width: 10px;}
+    html::-o-scrollbar-thumb {background-color: #728385;border-radius: 5px;}
+    /* Chrome, Safari, Edge 등 웹킷 기반 브라우저 */
+    ::-webkit-scrollbar {width: 10px;}
+    ::-webkit-scrollbar-track {box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);}
+    ::-webkit-scrollbar-thumb {background-color: #728385;border-radius: 5px;}
+}
+body {background-color: #222;}
+#wrap {
+    width: 440px;/* 디자인 기준 크기(iphone 17proMax) */
+    min-width: 320px;/* 최소 제한 너비(고정) */
+    max-width: 440px;/* 최대 제한 너비(디자인에 따라 다름) */
+    box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+    background-color: #fff;
+    margin: 0 auto;
+    overflow-x: hidden;/* x축 나간요소와 가로스크롤 숨기기 */
+    height: 100vh;
+}
+/* ========================================================= 1. intro */
+#wrap .intro {
+    height: 100vh;
+    background: linear-gradient(#fff, #A0D1D4 200%);
+    display: flex; flex-flow: row nowrap;
+    justify-content: center; align-items: center;
+}
+#wrap .intro h1 {}
+#wrap .intro h1 span {
+    display: block; text-align: center;
+    line-height: 1.5;
+    color: #2B2B2B;
+}
+#wrap .intro h1 span:nth-child(1) {}
+#wrap .intro h1 span:nth-child(2) {margin-bottom: 16px;}
+#wrap .intro h1 span:nth-child(3) {font-size: 1.2rem;}
+#wrap .intro h1 .name {font-size: 1.25rem; font-weight: 500;}
+/* ========================================================= 2. info */
+#wrap > .info {
+    height: 100vh; 
+    display: flex; flex-flow: column nowrap;
+    justify-content: center; align-items: center;
+}
+#wrap .info .photo {
+    width: 196px; height: 208px;
+    border-radius: 28px;
+    background-color: darkgrey;
+    margin-bottom: 36px;
+}
+#wrap .info .photo img {width: 100%;}
+#wrap .info .me {
+    margin-bottom: 36px;
+    display: flex; flex-flow: row wrap;
+    justify-content: space-around;
+}
+#wrap .info .me li {width: 100%; margin-bottom: 6px; text-align: center;}
+#wrap .info .me li:nth-child(1) {text-align: right; width: 40%;}
+#wrap .info .me li:nth-child(2) {text-align: left; width: 49%;}
+#wrap .info .me li a {}
+#wrap .info h2 {
+    font-size: 1.25rem; font-weight: 600;
+    margin-bottom: 12px;
+}
+#wrap .info .skill_list {
+    display: flex; 
+    flex-flow:row wrap;
+    justify-content: center; 
+    padding: 0 55px;
+    gap: 12px;
+}
+#wrap .info .skill_list p {
+    width: calc((100% - 12) / 5); /* margin: 0 0 12px; */
+}
+#wrap .info .skill_list p img {width: 100%;}
+/* ========================================================= 3. project */
+#wrap .project_wrap {}
+#wrap .project_wrap h1 {
+    color: #217278;
+    font-size: 1.25rem; font-weight: 500;
+    text-align: center;
+}
+/* ========================================================= 공통 프로젝트 선택자 */
+#wrap .project_wrap .project {width: calc(100% - 15px); margin: 0 auto 50px; overflow: hidden;}
+#wrap .project_wrap .project h2 {
+    font-size: 1.25rem; font-weight: 500;
+    margin: 30px 0 20px;
+}
+#wrap .project_wrap .project .mokup {height: 305px; overflow: hidden;}
+#wrap .project_wrap .project .mokup img {height: 100%;}
+#wrap .project_wrap .project .info {margin-top: 16px;}
+#wrap .project_wrap .project .info li {position: relative; padding-left: 15px;}
+#wrap .project_wrap .project .info li,
+#wrap .project_wrap .project .plan {
+    line-height: 1.4; 
+    font-size: 0.88rem;
+}
+#wrap .project_wrap .project .info li::before {
+    content: ''; display: block; 
+    position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+    background-color: #222; border-radius: 50%; width: 4px; height: 4px;
+}
+#wrap .project_wrap .project .plan {margin-top: 16px;}
+#wrap .project_wrap .project .link {text-align: center; margin: 40px 0;}
+#wrap .project_wrap .project1 .link .proposal {background-color: #6DBFC5; margin-right: 10px; }
+#wrap .project_wrap .project1 .link .prototype {background-color: #217278;}
+#wrap .project_wrap .project1 .link a {
+    display: inline-block;
+    padding: 12px 30px; 
+    border-radius: 12px;
+    color: #fff;
+}
+#wrap .project_wrap .project1 .link a:hover {filter: saturate(200%);}
+/* ========================================================= 개별 프로젝트 선택자 */
+#wrap .project_wrap .project1 {}
+#wrap .project_wrap .project1 h2 {}
+#wrap .project_wrap .project1 .mokup {}
+#wrap .project_wrap .project1 .mokup img {}
+#wrap .project_wrap .project1 .info {}
+#wrap .project_wrap .project1 .info li {}
+#wrap .project_wrap .project1 .info .plan {}
+#wrap .project_wrap .project1 .link {}
