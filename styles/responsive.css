@@ -1,72 +1,12 @@
 /* responsive.css */
-@media screen and (min-width:600px) {
-    /* 1행 글자크기, 여백 등 */
-    #wrap .intro h1 span {font-size: 1.5rem;}
-    #wrap .intro h1 span:last-child {font-size: 2.25rem;}
-    #wrap .intro h1 span .name {font-size: 2.25rem; font-weight: 500;}
-    /* 2행 */
-    #wrap > .info {
-        height: auto;
-        flex-flow: row nowrap; align-items: flex-start;
-        padding: 120px 0;
-    }
-    #wrap .info .profile .photo {width: 208px; height: 238px;}
-    #wrap .info .details {display: block;}
-    #wrap .info .details dl {margin-bottom: 38px;}
-    #wrap .info .details dl dt {font-size: 1.25rem; font-weight: 500;}
-    #wrap .info .details dl dd {line-height: 1.7;}
-    /* 3행 */
-    #wrap .project_wrap {}
-    #wrap .project_wrap h1+p {font-size: 1rem;}
-    #wrap .project_wrap .project {
-        width: 100%;
-        display: flex; flex-flow: row nowrap; 
-        /* align-items: flex-end; */
-        /* display: grid; grid-template-columns: 1fr 1fr; */
-        gap:40px;
-        margin: 55px auto 120px;
-    }
-    #wrap .project_wrap h1 {font-size: 2.25rem;}
-    #wrap .project_wrap .project .title_thum h2 {font-size: 2rem;}
-    #wrap .project_wrap .project .title_thum .mokup {height: 100%; width: auto;}
-    #wrap .project_wrap .project {display: flex; flex-flow: row nowrap;}
-    #wrap .project_wrap .project .details .info {
-        display: flex;
-        flex-flow: column nowrap;
-        padding: 0;
-    }
-    #wrap .project_wrap .project .title_thum .mokup img {
-        height: auto; /* 100% 덮어쓰기값으로 auto변경 */
-        width: 100%;
-    }
-    #wrap .project_wrap .project .details .info li,
-    #wrap .project_wrap .project .details .plan {font-size: 1rem;}
-    #wrap .project_wrap .project .details .link {text-align: left; margin: 40px 0 14px ;}
-    #wrap .project_wrap .project1 .details .link .proposal {}
-    #wrap .project_wrap .project1 .details .link .prototype {}
-    #wrap .project_wrap .project1 .details .link a {
-    margin: 34px 0 14px;
-    font-size: 1.25rem; font-weight: 500;
-}
-    /* 4행 그래픽 이미지 확대 */
-    #wrap .project_wrap .graphic_container a {width: 246px; height: 400px;}
-}/* 기기너비 600 이상일때 */
+@media screen and (min-width:600px) {}
+    
 @media screen and (min-width:470px) {
-    #wrap .info .profile .skill_list {
-        width: 320px; margin: 0 auto; padding: 0;
-    }
+    
 }
 @media screen and (min-width:760px) {
-    #wrap .project_wrap .project1 .details .link a {
-        padding: 14px 50px; 
-    }/* 버튼 크기 커짐 */
-    #wrap .project_wrap .project {
-        align-items: flex-end;
-    }/* 프로젝트 정렬 */
+    
 }
-@media screen and (min-width:1240px) {#wrap .info .profile .photo {width: 250px; height: 286px;}}
+@media screen and (min-width:1240px) {}
 @media screen and (min-width:840px) {
-    /* 2행 info -> 1행 2열 레이아웃 구조 변경 */
-    /* 3행 web -> 1행 2열 레이아웃 구조 변경 */
-    /* 4행 그래픽 이미지 확대 */
-}/* 기기너비 840 이상일때 */
+}/* 기기너비 840 이상일때 */ 
